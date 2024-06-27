@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.form, .image{
+    height: 100vh;
+    flex: 1;
+}
+.form{
+    background: rgb(207,238,238);
+    background: linear-gradient(90deg, rgba(207,238,238,1) 0%, rgba(160,198,236,1) 45%, rgba(169,223,241,1) 77%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.image{
+    background:url(pic1.jpg);
+    background-size: cover ;
+    background-position-y: center;
+}
+button{
+    height: 3rem;
+    width: 7rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background-color:transparent ;
+    cursor: pointer;
+    font-size: 1rem;
+}
+h1{
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-family: "Playwrite ES",cursive;
+}
+button:hover{
+    background-color: rgb(207,238,238);
+    border: none;
+}
+.error{
+    color: red;
+}
+form{
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    height: 2rem;
+    width: 12rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+input::placeholder{
+    color: black;
+}
+#frontname, #mail, #password1, #password2{
+    display: flex;
+    flex-direction: column;
+    height: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
